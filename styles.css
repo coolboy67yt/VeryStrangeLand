@@ -8,8 +8,20 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
-  background-color: #ff00ff; /* Magenta */
+  position: relative; /* Add position relative to contain the absolute position of the header-image div */
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Set the height of the image here */
+  background-image: url('90s-Wallpaper.jpg'); /* Replace 'path/to/your/image.jpg' with the actual image file path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1; /* Set the z-index to place the image behind the content */
 }
 
 h1 {
